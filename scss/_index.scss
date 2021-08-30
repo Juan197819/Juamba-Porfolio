@@ -1,0 +1,86 @@
+@import "Globales";
+
+$tamaño: 400px;
+$color: crimson;
+
+main{
+    margin-bottom: 400px;
+    section{    
+        display: flex;
+        article{
+            p{
+            font-size: 20px;
+            }
+        }
+    }   
+}
+.main{
+    &__imagen--mediana{
+    max-width: $tamaño;
+    height: $tamaño ;
+    border: 3px solid $color;
+    }
+    &__section__article__p{
+        font-size:  25px;
+        &--verde {
+        color: green;
+        }
+        &--rojo{
+            color: navy;
+        }
+        &--gris{
+            color: darkgray;
+        }
+        &--violeta{
+            color:violet;
+        }
+    }
+}
+picture{
+    max-width:400px;
+    max-height: 400px;
+    overflow: hidden;
+}
+
+header{
+    height: 15vh;
+    justify-content: space-between;
+    align-items: center ;
+    margin-bottom: 50px;
+    position: fixed;
+    z-index: 2;
+   outline: 2px solid transparent;
+    width: 100vw;
+    background-image: url(https://blog.linguaserve.com/hubfs/traduccion-interpretacion-innovaciones-tecnologicas.jpg);
+    background-size: cover;
+    
+    img{
+        border: 2px solid black;
+        padding: 20px ;
+    }
+
+    div{
+        width: 30%;
+        margin: 0 auto;
+    } 
+    nav{
+        width: 60%;
+        margin: 0 auto;
+    }
+    a{
+        display: block ;
+        padding: 5px;
+        color:white;
+        font-size: 17px;
+        font-weight: bolder;
+        text-align: center;
+        font-weight: bolder;
+    }
+    
+    a:hover{
+        border-bottom: 1px solid black;
+        color: rgb(0, 204, 255);
+    
+    }
+    
+}
