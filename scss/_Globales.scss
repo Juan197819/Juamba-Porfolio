@@ -4,8 +4,12 @@
     list-style-type:none;
     font-family: 'roboto';
     text-decoration: none;
-    box-sizing: border-box;
+    box-sizing:border-box;
 }
 html{
     font-size: 62.5%;
+}
+
+body{
+    background: linear-gradient(to right, rgba(112, 85, 155, 0.192), rgba(26, 26, 85, 0.9), blue );
 }

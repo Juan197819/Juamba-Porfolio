@@ -9,8 +9,56 @@
 html {
   font-size: 62.5%; }
 
+body {
+  background: linear-gradient(to right, rgba(112, 85, 155, 0.192), rgba(26, 26, 85, 0.9), blue); }
+
+/* HEADER */
 main {
-  margin-bottom: 400px; }
+  color: #bd2525; }
+
+.header {
+  height: 15vh;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 50px;
+  position: fixed;
+  z-index: 2;
+  outline: solid 2px transparent;
+  width: 100%;
+  background-size: cover;
+  display: flex; }
+  .header div {
+    height: 100%;
+    width: 30%;
+    margin: 0 auto; }
+    .header div img {
+      max-height: 100px;
+      width: 100px; }
+  .header nav {
+    width: 60%;
+    margin: 0 auto; }
+    .header nav li {
+      margin-right: 15px;
+      padding: 10px; }
+      .header nav li a {
+        display: block;
+        padding: 5px;
+        color: white;
+        font-size: 17px;
+        font-weight: bolder;
+        text-align: center;
+        font-weight: bolder; }
+      .header nav li a:hover {
+        border-bottom: 2px solid black;
+        color: #00ccff; }
+
+/* MAIN */
+main {
+  margin-bottom: 400px;
+  height: 80vh;
+  padding: 20px;
+  margin: 0 auto;
+  margin-top: 15vh; }
   main section {
     display: flex; }
     main section article p {
@@ -32,39 +80,157 @@ main {
   .main__section__article__p--violeta {
     color: violet; }
 
+footer {
+  padding-top: 20vh; }
+
 picture {
   max-width: 400px;
   max-height: 400px;
   overflow: hidden; }
 
-header {
-  height: 15vh;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 50px;
-  position: fixed;
-  z-index: 2;
-  outline: 2px solid transparent;
-  width: 100vw;
-  background-image: url(https://blog.linguaserve.com/hubfs/traduccion-interpretacion-innovaciones-tecnologicas.jpg);
-  background-size: cover; }
-  header img {
-    border: 2px solid black;
-    padding: 20px; }
-  header div {
-    width: 30%;
-    margin: 0 auto; }
-  header nav {
-    width: 60%;
-    margin: 0 auto; }
-  header a {
-    display: block;
-    padding: 5px;
-    color: white;
-    font-size: 17px;
-    font-weight: bolder;
-    text-align: center;
-    font-weight: bolder; }
-  header a:hover {
-    border-bottom: 1px solid black;
-    color: #00ccff; }
+/*ESTILOS UTILES*/
+.flexCol {
+  display: flex;
+  flex-direction: column; }
+
+.flexRow {
+  display: flex; }
+  .flexRow ul {
+    justify-content: right; }
+
+.enlaceConsultas a {
+  color: black;
+  font-size: 2rem;
+  font-weight: bold;
+  margin: 10px 20px;
+  display: flex;
+  flex: column;
+  justify-content: center;
+  border: black; }
+
+#enlaceConsultas a {
+  color: black;
+  font-size: 2rem;
+  font-weight: bold;
+  margin: 10px 20px;
+  display: flex;
+  flex: column;
+  justify-content: center;
+  border: black; }
+
+.copyright {
+  text-align: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 20px;
+  border: none;
+  color: grey; }
+
+/*ESTILOS INDIVIDUALES*/
+.FuenteParrafos1 {
+  font-size: medium;
+  color: rgba(0, 0, 0, 0.712);
+  background-color: rgba(17, 0, 255, 0.219);
+  font-style: oblique;
+  overflow: hidden;
+  margin: 20px;
+  padding: 20px; }
+
+#Tabla1 {
+  margin: 20px auto;
+  border: 4px solid #008b6d;
+  width: 60%;
+  background: linear-gradient(to right, black, rgba(0, 128, 0, 0.808), rgba(255, 255, 0, 0.658), rgba(32, 0, 44, 0.712), rgba(255, 0, 0, 0.486));
+  font-size: large;
+  font-family: 'roboto';
+  color: white;
+  transition: all 1s ease-in-out; }
+
+#Tabla1:hover {
+  transform: scale(1.2, 1.2);
+  color: white; }
+
+caption {
+  font-size: 30px;
+  text-decoration: underline;
+  margin-bottom: 10px; }
+
+.primerFreelance {
+  background-color: darkslategray;
+  font-size: 20px; }
+
+.tituloForm {
+  color: #1616cc;
+  font-size: 30px;
+  margin: 10px;
+  padding: 10px;
+  font-weight: bolder;
+  display: inline-block;
+  border-radius: 45px;
+  border: solid #ffc400;
+  background-color: white; }
+
+form {
+  margin: 30px auto;
+  margin-left: 30px;
+  font-size: 2rem;
+  font-weight: bold; }
+
+section {
+  width: 70%;
+  margin-left: 15px; }
+
+aside {
+  border-left: 4px solid black; }
+
+.imagenesProyecto {
+  display: inline-block;
+  width: 30%;
+  height: 30%;
+  border: solid black;
+  margin: 15px;
+  min-width: 250px; }
+
+p {
+  border-right: green  solid  4px;
+  border-top: yellow solid 4px;
+  border-left: blue solid 4px;
+  border-bottom: red solid 4px;
+  background-color: rgba(205, 190, 50, 0.158);
+  color: tomato;
+  font-size: 20px;
+  margin: 15px; }
+
+h3 {
+  font-size: 40px;
+  text-decoration: underline;
+  color: white; }
+
+#grid {
+  display: grid;
+  grid-template-areas: "cliente1 cliente1 none propaganda" "none cliente2 cliente2 propaganda" "cliente3 cliente3 none propaganda";
+  grid-template-rows: 100px 100px 100px;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  justify-content: center;
+  height: 80vh; }
+
+article #freeCliente1 {
+  grid-area: cliente1; }
+
+article #freeCliente2 {
+  grid-area: cliente2; }
+
+article #freeCliente3 {
+  grid-area: cliente3; }
+
+aside #propaganda {
+  grid-area: propaganda; }
+
+@media only screen and (max-width: 768px) {
+  .header {
+    display: flex;
+    flex-direction: column; }
+  section {
+    flex-direction: column; }
+  #grid {
+    display: flex;
+    flex-direction: column; } }
