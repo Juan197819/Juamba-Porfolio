@@ -16,7 +16,7 @@ main{
     z-index: 2;
     outline: solid 2px transparent;
     width: 100%;
-    background-size: cover;
+    background-color:rgb(3, 0, 0) ;
     display: flex;
     div{
         height: 100%;
@@ -48,7 +48,7 @@ main{
             }
             
             a:hover{
-                border-bottom: 2px solid black;
+                border-bottom: 2px solid rgb(197, 174, 174);
                 color: rgb(0, 204, 255);
             }
         }
