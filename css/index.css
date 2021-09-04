@@ -10,12 +10,9 @@ html {
   font-size: 62.5%; }
 
 body {
-  background: linear-gradient(to right, rgba(112, 85, 155, 0.192), rgba(26, 26, 85, 0.9), blue); }
+  background: whitesmoke; }
 
 /* HEADER */
-main {
-  color: #bd2525; }
-
 .header {
   height: 15vh;
   justify-content: space-between;
@@ -25,7 +22,7 @@ main {
   z-index: 2;
   outline: solid 2px transparent;
   width: 100%;
-  background-color: #030000;
+  background: linear-gradient(to right, rgba(112, 85, 155, 0.192), rgba(26, 26, 85, 0.9), blue);
   display: flex; }
   .header div {
     height: 100%;
@@ -43,7 +40,7 @@ main {
       .header nav li a {
         display: block;
         padding: 5px;
-        color: white;
+        color: orange;
         font-size: 17px;
         font-weight: bolder;
         text-align: center;
@@ -207,7 +204,9 @@ h3 {
 
 #grid {
   display: grid;
-  grid-template-areas: "cliente1 cliente1 none propaganda" "none cliente2 cliente2 propaganda" "cliente3 cliente3 none propaganda";
+  grid-template-areas: "cliente1 cliente1 none propaganda"
+ "none cliente2 cliente2 propaganda"
+ "cliente3 cliente3 none propaganda";
   grid-template-rows: 100px 100px 100px;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   justify-content: center;

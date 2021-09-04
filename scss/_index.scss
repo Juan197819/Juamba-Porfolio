@@ -4,9 +4,6 @@ $tamaño: 400px;
 $color: crimson;
 
 /* HEADER */ 
-main{
-    color: rgb(189, 37, 37);
-}
 .header{
     height: 15vh;
     justify-content: space-between;
@@ -16,7 +13,7 @@ main{
     z-index: 2;
     outline: solid 2px transparent;
     width: 100%;
-    background-color:rgb(3, 0, 0) ;
+    background: linear-gradient(to right, rgba(112, 85, 155, 0.192), rgba(26, 26, 85, 0.9), blue );
     display: flex;
     div{
         height: 100%;
@@ -40,7 +37,7 @@ main{
             a{
                 display: block ;
                 padding: 5px;
-                color: white;
+                color: orange;
                 font-size: 17px;
                 font-weight: bolder;
                 text-align: center;
