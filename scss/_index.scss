@@ -4,6 +4,7 @@ $tamaño: 400px;
 $color: crimson;
 
 /* HEADER */ 
+
 .header{
     height: 15vh;
     justify-content: space-between;
@@ -13,7 +14,7 @@ $color: crimson;
     z-index: 2;
     outline: solid 2px transparent;
     width: 100%;
-    background: linear-gradient(to right, rgba(112, 85, 155, 0.192), rgba(26, 26, 85, 0.9), blue );
+    background: linear-gradient(to right, rgb(112, 85, 155), rgb(26, 26, 85), blue );
     display: flex;
     div{
         height: 100%;
@@ -29,7 +30,8 @@ $color: crimson;
     nav{
         width: 60%;
         margin: 0 auto;
-        
+        background-color:inherit ;
+
         li{
             margin-right: 15px;
             padding: 10px;
@@ -61,34 +63,39 @@ main{
     margin: 0 auto;
     margin-top: 15vh;
     
+    h1{
+        color: rgb(26, 14, 14);
+        text-align: center;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 40px;
+        text-decoration: underline;
+    }
+    
     section{    
         display: flex;
         
         article{
-            
+       
             p{
                 font-size: 20px;
-            }
+            }   
         }
-    }   
+    }
 }
 
+/* CLIENTES ACTUALES*/
+
 .main{
-    &__imagen--mediana{
-    max-width: $tamaño;
-    height: $tamaño ;
-    border: 3px solid $color;
-    }
     
     &__section__article__p{
         font-size:  25px;
         
         &--verde {
-        color: green;
-    }
+            color: green;
+        }
 
-    &--rojo{
-        color: navy;
+        &--azul{
+            color: navy;
         }
         
         &--gris{
@@ -103,12 +110,6 @@ main{
 
 footer{
     padding-top: 20vh;
-}
-
-picture{
-    max-width:400px;
-    max-height: 400px;
-    overflow: hidden;
 }
 
 /*ESTILOS UTILES*/
@@ -136,16 +137,6 @@ picture{
     justify-content: center;
     border: black;
 }
-#enlaceConsultas a{
-    color: black;
-    font-size: 2rem;
-    font-weight: bold;
-    margin: 10px 20px;
-    display: flex;
-    flex: column;
-    justify-content: center;
-    border: black;
-}
 
 .copyright{
     text-align: center;
@@ -159,7 +150,6 @@ picture{
 
 .FuenteParrafos1{
     font-size: medium;
-    color: rgba(0, 0, 0, 0.712);
     background-color: rgba(17, 0, 255, 0.219);
     font-style: oblique;
     overflow: hidden;
@@ -233,12 +223,8 @@ section{
 }
 
 p{
-    border-right: green  solid  4px;
-    border-top: yellow solid 4px;
-    border-left: blue solid 4px;
-    border-bottom: red solid 4px;
+    border: solid 2px black;   
     background-color: rgba(205, 190, 50, 0.158);
-    color: tomato;
     font-size: 20px;
     margin: 15px;
 }
@@ -246,7 +232,7 @@ p{
 h3{
 font-size: 40px;
 text-decoration: underline;
-color: white;
+color: rgb(29, 3, 3);
 }
 
 #grid {
@@ -255,7 +241,7 @@ color: white;
     "cliente1 cliente1 none propaganda"
     "none cliente2 cliente2 propaganda"
     "cliente3 cliente3 none propaganda";
-    grid-template-rows: 100px 100px 100px;
+    grid-template-rows: 1fr 1fr 1fr;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     justify-content: center;
 height: 80vh;
@@ -263,18 +249,21 @@ height: 80vh;
 }
 article #freeCliente1{
     grid-area: cliente1;
+    overflow: hidden;
 }
 
 article #freeCliente2{
     grid-area: cliente2;
+    overflow: hidden;
 }
 
 article #freeCliente3{
     grid-area: cliente3;
-
+    overflow: hidden;
 }
 aside #propaganda{
     grid-area: propaganda;
+    overflow: hidden;
 }
 
 
@@ -284,14 +273,17 @@ aside #propaganda{
     .header{
         display: flex;
         flex-direction: column;
+        margin-bottom: 30px;
     }
     
     section { 
          flex-direction: column;
-        }
-        #grid{
-            display: flex;
-            flex-direction: column;
+    }
+    #grid{
+        display: flex;
+        margin-top: 150px;
+        flex-direction: column;
+        overflow: hidden;
         }
 }
 
