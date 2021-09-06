@@ -8,18 +8,45 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="short icon" href="imagenes\logo jpb 1.svg">
     <title>JUANBA - PROYECTOS INTEGRALES</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
     <link href = "https: //fonts.googleapis.com/css2? family = Roboto: wght @ 100 & display = swap "rel ="stylesheet ">
     <link rel="stylesheet" href="css\index.css">
 </head>
 <body class="flexCol">
-    <header class="header">
+      <header class="header flexRow">
         <div>
             <img src="imagenes\logo jpb 1.svg" alt="LOGO JUANBA">
         </div>
-         <nav>
+        <nav class="navbar hola navbar-expand-sm  bg-light">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="active" aria-current="page" href="index.html">¿Quien Soy?</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="active" aria-current="page" href="quienes_somos.html">Quienes Somos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="active" aria-current="page" href="proyectos_freelance.html">Proyectos Freelance</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="active" aria-current="page" href="clientes_actuales.html">Clientes Actuales</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="active" aria-current="page" href="contacto.html">Contacto</a>
+                        </li>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- <nav>
             <ul class="flexRow">
                 <li>
-                    <a href="index.html">Home</a>
+                    <a href="index.html">¿Quien Soy?</a>
                 </li>
                 <li>
                     <a href="quienes_somos.html">Quienes Somos</a>
@@ -34,23 +61,17 @@
                     <a href="contacto.html">Contacto</a>
                 </li>
             </ul>
-        </nav>
+        </nav> -->
     </header>
-    <main>
-        <h1>Desarrollo web</h1>
-        <section>
-            <article>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Beatae debitis minus nobis ex fuga tempore. Doloribus sapiente quas nesciunt delectus reiciendis fugiat velit necessitatibus harum laborum inventore. Magni, itaque mollitia!z Lorem ipsum, dolor sit amet consectetur adipisicing elit. Numquam eaque nisi ipsam modi perspiciatis quidem minus soluta, illum dicta perferendis dolor voluptate impedit eveniet voluptatum. Nulla, error tempora. Consequatur, eum!
-                </p>
-            </article>
-             <img class="imagenesProyecto" src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1504&q=80" alt="imagen proyecto 1">            
-        </section>
-        <section class="flexRow">
-            <article>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, aliquid! Dolores nam reiciendis cupiditate incidunt eius, laudantium accusamus error magnam dolor deserunt delectus assumenda rerum sequi asperiores qui suscipit tempore. Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt fuga quibusdam hic necessitatibus eos accusamus et provident voluptatibus atque doloremque possimus veniam, cum aspernatur porro quae. Obcaecati dolorem adipisci debitis! </p>
-            </article>
-             <img class="imagenesProyecto" src="https://images.unsplash.com/photo-1483478550801-ceba5fe50e8e?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1500&q=80" alt="imagen proyecto 2">            
-        </section>
+    <main class="flexCol">
+        <h1 class="h1Index">Hola, soy Juan Pablo, <span class="h1Span">
+            Desarrollador Web Junior</span>
+        </h1>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Beatae 
+        </p>
+        <img class="imagenesProyecto" src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1504&q=80" alt="imagen proyecto 1">            
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, aliquid! Dolores nam reiciendis cupiditate incidunt eius, laudantium accusamus error magnam dolor deserunt delectus assumenda rerum sequi asperiores qui suscipit tempore. Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt fuga quibusdam hic necessitatibus eos accusamus et provident voluptatibus atque doloremque possimus veniam, cum aspernatur porro quae. Obcaecati dolorem adipisci debitis! </p>
+         <img class="imagenesProyecto" src="https://images.unsplash.com/photo-1483478550801-ceba5fe50e8e?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1500&q=80" alt="imagen proyecto 2">            
     </main>
     <footer>
         <nav class="enlaceConsultas">

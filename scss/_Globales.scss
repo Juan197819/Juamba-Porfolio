@@ -4,12 +4,24 @@
     list-style-type:none;
     font-family: 'roboto';
     text-decoration: none;
-    box-sizing:border-box;
+    box-sizing: border-box;
 }
 html{
     font-size: 62.5%;
 }
 
 body{
-    background-color: whitesmoke;
+    background-color: #6b246b;
+     
+}
+
+/*ESTILOS UTILES*/
+
+.flexCol{
+    display: flex;
+    flex-direction: column;
+}
+
+.flexRow {
+    display: flex;
 }

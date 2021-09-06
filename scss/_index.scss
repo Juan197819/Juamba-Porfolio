@@ -6,27 +6,21 @@ $color: crimson;
 /* HEADER */ 
 
 .header{
-    height: 15vh;
-    justify-content: space-between;
-    align-items: center ;
-    margin-bottom: 50px;
     position: fixed;
-    z-index: 2;
-    outline: solid 2px transparent;
     width: 100%;
-    background: linear-gradient(to right, rgb(112, 85, 155), rgb(26, 26, 85), blue );
-    display: flex;
+    height: 15vh;
+    margin-bottom: 50px;
+    background: whitesmoke ;
     div{
         height: 100%;
         width: 30%;
         margin: 0 auto;
         
         img{
-            max-height: 100px;
-            width: 100px;
+            max-height: 100%;
         }
     } 
-    
+
     nav{
         width: 60%;
         margin: 0 auto;
@@ -39,11 +33,10 @@ $color: crimson;
             a{
                 display: block ;
                 padding: 5px;
-                color: orange;
+                color: rgb(42, 39, 39);
                 font-size: 17px;
                 font-weight: bolder;
                 text-align: center;
-                font-weight: bolder;
             }
             
             a:hover{
@@ -57,20 +50,31 @@ $color: crimson;
 /* MAIN */
 
 main{
-    margin-bottom: 400px;
-    height: 80vh;
+    width: 100%;
     padding: 20px;
-    margin: 0 auto;
-    margin-top: 15vh;
+    margin: 25% auto;
     
     h1{
         color: rgb(26, 14, 14);
         text-align: center;
         font-family: Arial, Helvetica, sans-serif;
         font-size: 40px;
-        text-decoration: underline;
+
+        .h1Span{
+            color:whitesmoke;
+            font-weight: bold;
+        }
     }
-    
+
+    .h1Index{
+        height: 90%;
+        padding: 50px;
+        justify-content: center;
+        align-content: center;
+        text-align: justify;
+    }
+
+
     section{    
         display: flex;
         
@@ -109,22 +113,14 @@ main{
 }
 
 footer{
+    height: 30vh;
+    width: 100%;
     padding-top: 20vh;
 }
 
-/*ESTILOS UTILES*/
-
-.flexCol{
-    display: flex;
-    flex-direction: column;
-}
-
-.flexRow {
-    display: flex;
         
-    ul{
-        justify-content: right;
-    }
+ul{
+    justify-content: right;
 }
 
 .enlaceConsultas a{
@@ -214,7 +210,6 @@ section{
  }
 
 .imagenesProyecto{
-    display: inline-block;
     width: 30%;
     height: 30%;
     border: solid black;
