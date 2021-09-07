@@ -7,11 +7,14 @@ $color: crimson;
 
 .header{
     position: fixed;
+    z-index: 1;
     width: 100%;
     height: 15vh;
     margin-bottom: 50px;
     background: whitesmoke ;
-    div{
+    align-items: center;
+
+    picture{
         height: 100%;
         width: 30%;
         margin: 0 auto;
@@ -37,6 +40,7 @@ $color: crimson;
                 font-size: 17px;
                 font-weight: bolder;
                 text-align: center;
+                justify-content: center;
             }
             
             a:hover{
@@ -119,9 +123,6 @@ footer{
 }
 
         
-ul{
-    justify-content: right;
-}
 
 .enlaceConsultas a{
     color: black;

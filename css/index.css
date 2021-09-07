@@ -23,15 +23,17 @@ body {
 /* HEADER */
 .header {
   position: fixed;
+  z-index: 1;
   width: 100%;
   height: 15vh;
   margin-bottom: 50px;
-  background: whitesmoke; }
-  .header div {
+  background: whitesmoke;
+  align-items: center; }
+  .header picture {
     height: 100%;
     width: 30%;
     margin: 0 auto; }
-    .header div img {
+    .header picture img {
       max-height: 100%; }
   .header nav {
     width: 60%;
@@ -46,7 +48,8 @@ body {
         color: #2a2727;
         font-size: 17px;
         font-weight: bolder;
-        text-align: center; }
+        text-align: center;
+        justify-content: center; }
       .header nav li a:hover {
         border-bottom: 2px solid #c5aeae;
         color: #00ccff; }
@@ -91,9 +94,6 @@ footer {
   height: 30vh;
   width: 100%;
   padding-top: 20vh; }
-
-ul {
-  justify-content: right; }
 
 .enlaceConsultas a {
   color: black;
