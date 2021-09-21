@@ -8,20 +8,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="short icon" href="imagenes\logo jpb 1.svg">
     <title>JUANBA - PROYECTOS INTEGRALES</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+    <!--<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>-->
     <link href = "https: //fonts.googleapis.com/css2? family = Roboto: wght @ 100 & display = swap "rel ="stylesheet ">
     <link rel="stylesheet" href="css\index.css">
 </head>
 <body class="flexCol">
-    <header class="header flexRow">
+    <header class="flexRow">
         <picture>
             <img src="imagenes\logo jpb 1.svg" alt="LOGO JUANBA">
         </picture>
         <nav>
             <ul class="flexRow">
-                <li>
+                <li class="liHome">
                     <a href="index.html">Home</a>
+                    <ul id="ulHome">
+                        <li>
+                            <a href="quienes_somos.html">¿Quien Soy?</a>
+                        </li>
+                        <li>                   
+                            <a href="proyectos_freelance.html">Proyectos Freelance</a>
+                        </li>
+                        <li>
+                            <a href="clientes_actuales.html">Clientes Actuales</a>
+                        </li>
+                        <li>
+                            <a href="contacto.html">Contacto</a>
+                        </li>
+                    </ul>
                 </li>
                 <li>
                     <a href="quienes_somos.html">¿Quien Soy?</a>
@@ -39,29 +53,35 @@
         </nav>
     </header>
     <main class="flexCol">
-        <h1 class="h1Index">Hola, soy Juan Pablo, <span class="h1Span">
-            Desarrollador Web Junior</span> con muchas ganas de crecer en este rubro.
-        </h1>
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Beatae 
-        </p>
-        <img class="imagenesProyecto" src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1504&q=80" alt="imagen proyecto 1">            
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, aliquid! Dolores nam reiciendis cupiditate incidunt eius, laudantium accusamus error magnam dolor deserunt delectus assumenda rerum sequi asperiores qui suscipit tempore. Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt fuga quibusdam hic necessitatibus eos accusamus et provident voluptatibus atque doloremque possimus veniam, cum aspernatur porro quae. Obcaecati dolorem adipisci debitis! </p>
-         <img class="imagenesProyecto" src="https://images.unsplash.com/photo-1483478550801-ceba5fe50e8e?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1500&q=80" alt="imagen proyecto 2">            
+        <div class="flexCol contenedorH1Index" >
+            <h1 class="h1Index">Hola, soy Juan Pablo, <span class="h1SpanIndex">
+                Desarrollador Web Junior</span> con muchas ganas de crecer en este rubro.
+            </h1>
+        </div>
+        <div class="flexRow">
+            <p class="pIndex" >Desde que inicie en CODERHOUSE el curso de Desarrollo Web se me ha abierto la puerta a este nuevo mundo de la programacion tan apasionante y el cual viene creciendp de manera exponencial. 
+            </p>
+            <img class="imagenesIndex" src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1504&q=80" alt="imagen proyecto 1">            
+        </div>
+        <div class="flexRow">
+            <img class="imagenesIndex" src="https://images.unsplash.com/photo-1483478550801-ceba5fe50e8e?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1500&q=80" alt="imagen proyecto 2">            
+            <p class="pIndex">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, aliquid! Dolores nam reiciendis cupiditate incidunt eius, laudantium accusamus error magnam dolor deserunt delectus assumenda rerum sequi asperiores qui suscipit tempore. Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt fuga quibusdam hic necessitatibus eos accusamus et provident voluptatibus atque doloremque possimus veniam, cum aspernatur porro quae. Obcaecati dolorem adipisci debitis! </p>
+        </div>
     </main>
     <footer>
-        <nav class="enlaceConsultas">
+        <nav class="flexCol">
             <a href="">
-                <img src="" alt="icono wasap">Envie un Whassap
-            <a>
-            <a href="">
-                <img src="" alt="icono Telefono">Llame desde cualquier telefono
+                <img src="imagenes\iconos\Vector.png" alt="icono WhatsApp"> Envienos un WhatsApp
             </a>
             <a href="">
-                <img src="" alt="icono Mail">Envienos un eMail
+                <img src="imagenes\iconos\Vector-1.png" alt="icono Telefono">Llame desde cualquier telefono
+            </a>
+            <a href="">
+                <img src="imagenes\iconos\Vector-2.png" alt="icono Mail">Envienos un eMail
             </a>
         </nav>
-        <div >
-            <p class=" copyright">Copyright</p>
+        <div>
+            <p class="copyright">Todos los derechos Reservados &copy; | JUAMBA Desarrolo Web</p>
         </div>
     </footer>
 </body>

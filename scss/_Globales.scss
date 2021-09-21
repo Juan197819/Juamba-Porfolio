@@ -1,18 +1,16 @@
+/*GLOBALES*/
+
 * {
     margin: 0;
     padding: 0;
-    list-style-type:none;
+    list-style-type: none;
     font-family: 'roboto';
-    text-decoration: none;
     box-sizing: border-box;
-}
-html{
-    font-size: 62.5%;
+    text-decoration: none;
 }
 
-body{
-    background-color: #6b246b;
-     
+html{
+    font-size: 62.5%;
 }
 
 /*ESTILOS UTILES*/
@@ -25,3 +23,135 @@ body{
 .flexRow {
     display: flex;
 }
+
+/* HEADER GENERAL*/ 
+
+header{
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+    height: 15vh;
+    padding: 10px;
+    background: whitesmoke ;
+    align-items: center;
+
+    picture{
+        height: 100%;
+        width: 30%;
+        margin: 0 auto;
+        
+        img{
+            max-height: 78px;
+        }
+    } 
+
+    nav{
+        width: 60%;
+        margin: 0 auto;
+        background-color:inherit ;
+
+        
+        li{
+            margin-right: 15px;
+            padding: 10px;
+            
+            a{
+                display: block;
+                padding: 5px;
+                color: rgb(42, 39, 39);
+                font-size: 17px;
+                font-weight: bolder;
+                text-align: center;
+                justify-content: center;
+            }
+            
+            a:hover{
+                border-bottom: 2px solid rgb(197, 174, 174);
+                color: rgb(0, 204, 255);
+            }
+        }
+    }
+}
+
+
+li{
+    position: relative;
+}
+
+.liHome{
+    display: inline-block;
+    position: relative;
+}
+
+#ulHome{
+    position: absolute;
+    border: solid 1px black;
+    background-color: whitesmoke;
+    width: 100px;
+
+
+    li{
+        border-bottom: 2px solid grey;
+        padding: 0px;
+
+        a{
+            font-size: 12px;
+
+            display: inline-block;
+        }
+    }
+} 
+
+ul .liHome a:hover{
+    z-index: 2;
+    background-color: chartreuse;
+    display: inline-block;
+}
+
+/* MAIN GENERAL*/
+
+main{
+    width: 100%;
+    background-color: rgb(137, 10, 175);
+    margin-top: 15vh;
+    
+    h1{
+        color: rgb(26, 14, 14);
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 40px;
+    }
+    }
+
+/* FOOTER GENERAL*/
+
+footer{
+    width: 100%;
+    background-color: whitesmoke;
+    margin-top: 15vh;
+
+    nav{
+        align-items: center;
+    }
+    
+    a{
+        color: black;
+        font-size: 2rem;
+        font-weight: bold;
+        padding: 10px 20px;
+        border: black;
+        text-decoration: none;
+    
+        img{
+            margin: 15px;
+        }
+    }
+}
+
+.copyright{
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+    border: none;
+    color: grey;
+}
+

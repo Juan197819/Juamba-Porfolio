@@ -1,16 +1,14 @@
+/*GLOBALES*/
 * {
   margin: 0;
   padding: 0;
   list-style-type: none;
   font-family: 'roboto';
-  text-decoration: none;
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  text-decoration: none; }
 
 html {
   font-size: 62.5%; }
-
-body {
-  background-color: #6b246b; }
 
 /*ESTILOS UTILES*/
 .flexCol {
@@ -20,29 +18,29 @@ body {
 .flexRow {
   display: flex; }
 
-/* HEADER */
-.header {
+/* HEADER GENERAL*/
+header {
   position: fixed;
   z-index: 1;
   width: 100%;
   height: 15vh;
-  margin-bottom: 50px;
+  padding: 10px;
   background: whitesmoke;
   align-items: center; }
-  .header picture {
+  header picture {
     height: 100%;
     width: 30%;
     margin: 0 auto; }
-    .header picture img {
-      max-height: 100%; }
-  .header nav {
+    header picture img {
+      max-height: 78px; }
+  header nav {
     width: 60%;
     margin: 0 auto;
     background-color: inherit; }
-    .header nav li {
+    header nav li {
       margin-right: 15px;
       padding: 10px; }
-      .header nav li a {
+      header nav li a {
         display: block;
         padding: 5px;
         color: #2a2727;
@@ -50,33 +48,101 @@ body {
         font-weight: bolder;
         text-align: center;
         justify-content: center; }
-      .header nav li a:hover {
+      header nav li a:hover {
         border-bottom: 2px solid #c5aeae;
         color: #00ccff; }
 
-/* MAIN */
+li {
+  position: relative; }
+
+.liHome {
+  display: inline-block;
+  position: relative; }
+
+#ulHome {
+  position: absolute;
+  border: solid 1px black;
+  background-color: whitesmoke;
+  width: 100px; }
+  #ulHome li {
+    border-bottom: 2px solid grey;
+    padding: 0px; }
+    #ulHome li a {
+      font-size: 12px;
+      display: inline-block; }
+
+ul .liHome a:hover {
+  z-index: 2;
+  background-color: chartreuse;
+  display: inline-block; }
+
+/* MAIN GENERAL*/
 main {
   width: 100%;
-  padding: 20px;
-  margin: 25% auto; }
+  background-color: #890aaf;
+  margin-top: 15vh; }
   main h1 {
     color: #1a0e0e;
-    text-align: center;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 40px; }
-    main h1 .h1Span {
-      color: whitesmoke;
-      font-weight: bold; }
-  main .h1Index {
-    height: 90%;
-    padding: 50px;
-    justify-content: center;
-    align-content: center;
-    text-align: justify; }
-  main section {
-    display: flex; }
-    main section article p {
-      font-size: 20px; }
+
+/* FOOTER GENERAL*/
+footer {
+  width: 100%;
+  background-color: whitesmoke;
+  margin-top: 15vh; }
+  footer nav {
+    align-items: center; }
+  footer a {
+    color: black;
+    font-size: 2rem;
+    font-weight: bold;
+    padding: 10px 20px;
+    border: black;
+    text-decoration: none; }
+    footer a img {
+      margin: 15px; }
+
+.copyright {
+  text-align: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 20px;
+  border: none;
+  color: grey; }
+
+/* MAIN INDEX*/
+.contenedorH1Index {
+  width: 100%;
+  height: 85vh;
+  background-image: url(../imagenes/imagen_cel.png);
+  background-size: cover;
+  background-repeat: no-repeat; }
+
+.h1Index {
+  text-align: justify;
+  padding: 42.5vh 200px;
+  color: black; }
+
+.h1SpanIndex {
+  color: whitesmoke;
+  font-weight: bold; }
+
+.imagenesIndex {
+  width: 30%;
+  height: 100px;
+  border: solid 1px black;
+  margin: 15px;
+  min-width: 250px;
+  padding: 10px;
+  background-color: cadetblue; }
+
+.pIndex {
+  background-color: whitesmoke;
+  font-size: 20px;
+  margin: 15px;
+  padding: 10px;
+  display: block;
+  border: 1px solid black; }
 
 /* CLIENTES ACTUALES*/
 .main__section__article__p {
@@ -90,28 +156,6 @@ main {
   .main__section__article__p--violeta {
     color: violet; }
 
-footer {
-  height: 30vh;
-  width: 100%;
-  padding-top: 20vh; }
-
-.enlaceConsultas a {
-  color: black;
-  font-size: 2rem;
-  font-weight: bold;
-  margin: 10px 20px;
-  display: flex;
-  flex: column;
-  justify-content: center;
-  border: black; }
-
-.copyright {
-  text-align: center;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font-size: 20px;
-  border: none;
-  color: grey; }
-
 /*ESTILOS INDIVIDUALES*/
 .FuenteParrafos1 {
   font-size: medium;
@@ -124,12 +168,14 @@ footer {
 #Tabla1 {
   margin: 20px auto;
   border: 4px solid #008b6d;
+  border-collapse: collapse;
   width: 60%;
   background: linear-gradient(to right, black, rgba(0, 128, 0, 0.808), rgba(255, 255, 0, 0.658), rgba(32, 0, 44, 0.712), rgba(255, 0, 0, 0.486));
   font-size: large;
   font-family: 'roboto';
   color: white;
-  transition: all 1s ease-in-out; }
+  transition: all 1s ease-in-out;
+  text-align: center; }
 
 #Tabla1:hover {
   transform: scale(1.2, 1.2);
@@ -168,19 +214,6 @@ section {
 aside {
   border-left: 4px solid black; }
 
-.imagenesProyecto {
-  width: 30%;
-  height: 30%;
-  border: solid black;
-  margin: 15px;
-  min-width: 250px; }
-
-p {
-  border: solid 2px black;
-  background-color: rgba(205, 190, 50, 0.158);
-  font-size: 20px;
-  margin: 15px; }
-
 h3 {
   font-size: 40px;
   text-decoration: underline;
@@ -210,15 +243,30 @@ aside #propaganda {
   grid-area: propaganda;
   overflow: hidden; }
 
-@media only screen and (max-width: 768px) {
-  .header {
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 30px; }
-  section {
-    flex-direction: column; }
-  #grid {
-    display: flex;
-    margin-top: 150px;
-    flex-direction: column;
-    overflow: hidden; } }
+/*@media only screen and (max-width: 768px){
+    header{
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 30px;
+        height: 30vh;
+        
+        a{
+            font-size: 12px;
+        }
+    }
+    
+    section { 
+        flex-direction: column;
+    }
+    
+    #grid{
+        display: flex;
+        margin-top: 150px;
+        flex-direction: column;
+        overflow: hidden;
+    }
+    .flexRow{
+        display: flex;
+        flex-direction: column;
+    }
+}*/
