@@ -1,5 +1,5 @@
 {
-  "name": "desafiosass",
+  "name": "clase_github",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -8,9 +8,17 @@
     "watch-sass": "nodemon -e scss -x \"npm run build-sass\"",
     "build-sass": "node-sass --include-path scss scss/_index.scss css/index.css"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Juan197819/clase_github.git"
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Juan197819/clase_github/issues"
+  },
+  "homepage": "https://github.com/Juan197819/clase_github#readme",
   "devDependencies": {
     "node-sass": "^6.0.1",
     "nodemon": "^2.0.12"

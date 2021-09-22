@@ -126,7 +126,7 @@ main{
 
 footer{
     width: 100%;
-    background-color: whitesmoke;
+    background-color: rgba(19, 13, 13, 0.842);
     margin-top: 15vh;
 
     nav{
@@ -135,14 +135,21 @@ footer{
     
     a{
         color: black;
-        font-size: 2rem;
+        font-size: 20px;
         font-weight: bold;
         padding: 10px 20px;
         border: black;
         text-decoration: none;
-    
+        display: block;
+        height: 50px;
+        text-align: center;
+        margin: 15px;
+        padding: 10px;
         img{
-            margin: 15px;
+            display: inline-block;
+            height: 80%;
+            top: auto;
+            padding-right: 10px; 
         }
     }
 }
