@@ -18,19 +18,37 @@
         </picture>
         <nav>
             <ul class="flexRow">
-                <li>
-                    <a href="index.html">Home</a>
+                <li class="liHome">
+                    <a class="menuColapsado" href="#">Menu</a>
+                    <a class="listasOcultas" href="index.html">Home</a>
+                    <ul id="ulHome">
+                        <li>
+                            <a href="index.html">Home</a>
+                        </li>
+                        <li>
+                            <a href="quien_soy.html">¿Quien Soy?</a>
+                        </li>
+                        <li>                   
+                            <a href="planes.html">Planes de servicios</a>
+                        </li>
+                        <li>
+                            <a href="clientes_actuales.html">Clientes Actuales</a>
+                        </li>
+                        <li>
+                            <a href="contacto.html">Contacto</a>
+                        </li>
+                    </ul>
                 </li>
-                <li>
+                <li class="listasOcultas">
                     <a href="quien_soy.html">¿Quien Soy?</a>
                 </li>
-                <li>
-                    <a href="planes.html">Proyectos Freelance</a>
+                <li class="listasOcultas">
+                    <a href="planes.html">Planes de servicios</a>
                 </li>
-                <li>
+                <li class="listasOcultas">
                     <a href="clientes_actuales.html">Clientes Actuales</a>
                 </li>
-                <li>
+                <li class="listasOcultas">
                     <a href="contacto.html">Contacto</a>
                 </li>
             </ul>
@@ -56,7 +74,7 @@ s            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudia
         </aside>
     </main>
     <footer>
-        <nav class="enlaceConsultas">
+        <nav>
             <a href="">
                 <img src="imagenes\iconos\Vector.png" alt="wasap"> Envienos un WhatsApp
             </a>

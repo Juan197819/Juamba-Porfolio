@@ -7,7 +7,7 @@
     <meta name="keywords" content="freelance, porfolio, web, desarrollo, pagina, sitio">
     <meta name="description" content="Esta es la presentacion del porfolio personal como desarrollador web de Juan Pablo Barani">
     <link rel="short icon" href="imagenes\logo jpb 1.svg">
-    <title>Quienes Somos</title>
+    <title>Planes y servicios</title>
     <link href = "https: //fonts.googleapis.com/css2? family = Roboto: wght @ 100 & display = swap "rel =" stylesheet ">
     <link rel="stylesheet" href="css\index.css">
 </head>
@@ -18,27 +18,44 @@
         </picture>
         <nav>
             <ul class="flexRow">
-                <li>
-                    <a href="index.html">Home</a>
+                <li class="liHome">
+                    <a class="menuColapsado" href="#">Menu</a>
+                    <a class="listasOcultas" href="index.html">Home</a>
+                    <ul id="ulHome">
+                        <li>
+                            <a href="index.html">Home</a>
+                        </li>
+                        <li>
+                            <a href="quien_soy.html">¿Quien Soy?</a>
+                        </li>
+                        <li>                   
+                            <a href="planes.html">Planes de servicios</a>
+                        </li>
+                        <li>
+                            <a href="clientes_actuales.html">Clientes Actuales</a>
+                        </li>
+                        <li>
+                            <a href="contacto.html">Contacto</a>
+                        </li>
+                    </ul>
                 </li>
-                <li>
+                <li class="listasOcultas">
                     <a href="quien_soy.html">¿Quien Soy?</a>
                 </li>
-                <li>
-                    <a href="planes.html">Proyectos Freelance</a>
+                <li class="listasOcultas">
+                    <a href="planes.html">Planes de servicios</a>
                 </li>
-                <li>
+                <li class="listasOcultas">
                     <a href="clientes_actuales.html">Clientes Actuales</a>
                 </li>
-                <li>
+                <li class="listasOcultas">
                     <a href="contacto.html">Contacto</a>
                 </li>
             </ul>
         </nav>
     </header>
     <main>
-        <h1>Mi historia laboral</h1>
-        <h2>Planes de servicio</h2>
+        <h1>Planes de servicio</h1>
         <table id="Tabla1" border="">
             <caption>
             Elija su plan acorde a sus necesidades

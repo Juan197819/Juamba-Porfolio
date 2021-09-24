@@ -1,9 +1,6 @@
 @import "globales";
 
-$tamaño: 400px;
-$color: crimson;
-
-/* MAIN INDEX*/
+/*------ MAIN INDEX-------*/
 
 .contenedorH1Index{
     width: 100%;
@@ -24,7 +21,9 @@ $color: crimson;
     font-weight: bold;
 }
 
-.imagenesIndex{
+/*----MAIN CLIENTES ACTUALES------*/
+
+.imagenesClientes{
     width: 30%;
     height: 100px;
     border: solid 1px black;
@@ -34,7 +33,7 @@ $color: crimson;
     background-color: cadetblue;
 }
 
-.pIndex{
+.pClientes{
     background-color: whitesmoke;
     font-size: 20px;
     margin: 15px;
@@ -43,41 +42,8 @@ $color: crimson;
     border: 1px solid black;
 }
 
-/* CLIENTES ACTUALES*/
+/*------ESTILOS TABLAS------*/ 
 
-.main{
-    
-    &__section__article__p{
-        font-size:  25px;
-        
-        &--verde {
-            color: green;
-        }
-
-        &--azul{
-            color: navy;
-        }
-        
-        &--gris{
-            color: darkgray;
-        }
-        
-        &--violeta{
-            color:violet;
-        }
-    }
-}
-        
-/*ESTILOS INDIVIDUALES*/
-
-.FuenteParrafos1{
-    font-size: medium;
-    background-color: rgba(17, 0, 255, 0.219);
-    font-style: oblique;
-    overflow: hidden;
-    margin: 20px;
-    padding: 20px;
-}
 
 #Tabla1{
     margin: 20px auto;
@@ -90,21 +56,18 @@ $color: crimson;
     color: white;
     transition: all 1s ease-in-out;
     text-align: center;
+
+    caption{
+        font-size: 30px;
+        text-decoration: underline;
+        margin-bottom: 10px;
+    }
 }
 
 #Tabla1:hover{
     transform: scale(1.2,1.2);
     color: white;
     
-}
-caption{
-    font-size: 30px;
-    text-decoration: underline;
-    margin-bottom: 10px;
-}
-.primerFreelance{
-    background-color: darkslategray;
-    font-size: 20px;
 }
 
 .tituloForm{
@@ -127,79 +90,57 @@ form{
     font-weight: bold;
 }
 
-
-section{
-    width: 70%;
-    margin-left: 15px;
-}
-
- aside{
-     border-left: 4px solid black;
- }
-
-
 h3{
 font-size: 40px;
 text-decoration: underline;
 color: rgb(29, 3, 3);
 }
 
-#grid {
-    display: grid;
-    grid-template-areas: 
-    "cliente1 cliente1 none propaganda"
-    "none cliente2 cliente2 propaganda"
-    "cliente3 cliente3 none propaganda";
-    grid-template-rows: 1fr 1fr 1fr;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    justify-content: center;
-    height: 80vh;
-}
 
-article #freeCliente1{
-    grid-area: cliente1;
-    overflow: hidden;
-}
+.menuColapsado{
+    display: none;
+    }
 
-article #freeCliente2{
-    grid-area: cliente2;
-    overflow: hidden;
-}
+/* -----MEDIA QUERIES--------*/ 
 
-article #freeCliente3{
-    grid-area: cliente3;
-    overflow: hidden;
-}
-aside #propaganda{
-    grid-area: propaganda;
-    overflow: hidden;
-}
+@media only screen and (max-width: 768px){
 
-/*@media only screen and (max-width: 768px){
-    header{
-        display: flex;
-        flex-direction: column;
-        margin-bottom: 30px;
-        height: 30vh;
-        
-        a{
-            font-size: 12px;
-        }
-    }
-    
-    section { 
-        flex-direction: column;
-    }
-    
-    #grid{
-        display: flex;
-        margin-top: 150px;
-        flex-direction: column;
-        overflow: hidden;
-    }
-    .flexRow{
-        display: flex;
-        flex-direction: column;
-    }
-}*/
+    li{
+        display: inline-block;   
+        position: relative;
+        font-size: 14px;
+      }
+      
+      ul li ul{
+        position: absolute;
+        display: none;
+      }
+      
+      ul ul li{
+        display: block;
+      }
+      
+      ul li:hover ul{
+        display:inline-block;
+      }
+      .listasOcultas{
+          display: none;
+      }
+
+      .menuColapsado{
+        display: block;
+        width: 120px;
+        border-right: 2px solid black;
+        border-bottom: 2px solid black;
+      }
+
+      .liHome{
+          margin: 0 auto;
+      }
+
+      #ulHome{
+          border-bottom: 2px solid grey;
+          width: 100%;
+      }
+}
 
