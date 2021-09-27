@@ -14,7 +14,7 @@
 <body class="flexCol">
     <header class="flexRow">
         <picture>
-            <img src="imagenes\logo jpb 1.svg" alt="LOGO JUANBA">
+            <img class="logo" src="imagenes\logo jpb 1.svg" alt="LOGO JUANBA">
         </picture>
         <nav>
             <ul class="flexRow">
@@ -32,7 +32,7 @@
                             <a href="planes.html">Planes de servicios</a>
                         </li>
                         <li>
-                            <a href="clientes_actuales.html">Clientes Actuales</a>
+                            <a href="reseña_web.html">Importancia de la WEB</a>
                         </li>
                         <li>
                             <a href="contacto.html">Contacto</a>
@@ -46,7 +46,7 @@
                     <a href="planes.html">Planes de servicios</a>
                 </li>
                 <li class="listasOcultas">
-                    <a href="clientes_actuales.html">Clientes Actuales</a>
+                    <a href="reseña_web.html">Importancia de la WEB</a>
                 </li>
                 <li class="listasOcultas">
                     <a href="contacto.html">Contacto</a>
@@ -54,11 +54,32 @@
             </ul>
         </nav>
     </header>
-    <main>
-        <h1>Planes de servicio</h1>
+    <main class="mainPlanes">
+        <h1>Catalogo de servicios</h1>
+        <h2>DISEÑO WEB</h2>
+        <p>Asesoramos en la elección del armado, implementación y desarrollo del sitio web tomando en cuenta si es Personal, Comercial, Institucional o Profesional.
+        </p>
+        <h2>REDISEÑO WEB</h2>
+        <p>A veces con el transcurso del tiempo algunos sitios web quedan desactualizados ya sea en información o en diseño, y es conveniente efectuarles retoques que lo muestren actual y confiable.
+        Para el rediseño de su página web, se contemplan aspectos de usabilidad, y de ser necesario se plantea una mejor distribución de la información, agrupándola y mostrándola en base a los diferentes conceptos de cada sección.
+        </p>
+        <h2>HOSTING</h2>
+        <p>Realizamos el alojamiento del sitio en servidores con alto nivel de prestación.
+        </p>
+        <h2>DOMINIOS</h2>
+        <p>Tramitamos sin cargo para el cliente ante NIC Argentina la obtención del domino (.com.ar).
+        * El registro de dominios en Argentina es arancelado a partir del 5 de marzo de 2014.
+        </p>
+        <h2>MANTENIMIENTO DE SITIOS WEB</h2>
+        <p>La permanente evolución de las tecnologías de Internet, y los cambios propios de bienes y servicios que se ofrecen a través de la Web, hacen indispensable la actualización de los sitios web en forma periódica.
+        Sitios Web Simples realiza el mantenimiento periódico del sitio Web, efectuando la revisión de contenidos, actualizaciones e incorporación de nuevos textos e imágenes.
+        </p>
+         <H2>POSICIONAMIENTO SEO</H2>
+         <P>Para todo empresa es importante que los clientes lleguen a su página web sin necesidad de conocerlos previamente, para esto ofrezco servicios de posicionamiento orgánico (SEO) en buscadores como google, así como adecuación y posicionamiento de sus redes sociales.
+         </P>
         <table id="Tabla1" border="">
             <caption>
-            Elija su plan acorde a sus necesidades
+            Elija el plan acorde a sus necesidades
             </caption>
             <thead >
                 <tr>
@@ -99,20 +120,34 @@
             </tbody>
         </table>
     </main>
-    <footer>
-        <nav class="enlaceConsultas">
-            <a href="">
-                <img src="imagenes\iconos\Vector.png" alt="wasap"> Envienos un WhatsApp
-            </a>
-            <a href="">
-                <img src="imagenes\iconos\Vector-1.png" alt="icono Telefono">Llame desde cualquier telefono
-            </a>
-            <a href="">
-                <img src="imagenes\iconos\Vector-2.png" alt="icono Mail">Envienos un eMail
-            </a>
-        </nav>
+    <footer class="flexCol">
+        <p>Contactate conmigo a traves del medio que prefieras</p>
+        <div class="flexRow footerRedes">
+            <nav class="flexCol">
+                <a href="https://api.whatsapp.com/send?phone=+541138450352&text=Hola, queria consultar por los servicios de desarrollo Web">
+                    <img src="imagenes\iconos\Vector.png" alt="wasap">Consultame por WhatsApp
+                </a>
+                <a href="tel:+541138450352">
+                    <img src="imagenes\iconos\Vector-1.png" alt="icono Telefono">Llamame desde cualquier telefono
+                </a>
+                <a href="mailto:juanpablo_b77@hotmail.com">
+                    <img src="imagenes\iconos\Vector-2.png" alt="icono Mail">Enviame un eMail
+                </a>
+                <nav class="flexRow">
+                    <a href="https://www.instagram.com">
+                        <img  class="redes" src="imagenes\iconos\ico Instagram.svg" alt="">
+                    </a>
+                    <a href="https://ar.linkedin.com/">
+                        <img  class="redes" src="imagenes\iconos\ico Linkedin.svg" alt="">
+                    </a>
+                    <a href="https://www.facebook.com/">
+                        <img  class="redes" src="imagenes\iconos\icomoon-free_facebook.svg" alt="">
+                    </a>
+                </nav>
+            </nav>
+        </div>
         <div>
-            <p class="copyright">Todos los derechos Reservados &copy; | JUAMBA Desarrolo Web</p>
+            <p class="copyright">Todos los derechos Reservados &copy; | JUANBA Desarrolo Web</p>
         </div>
     </footer>
 </body>

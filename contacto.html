@@ -14,7 +14,7 @@
 <body class="flexCol">
     <header class="flexRow">
         <picture>
-            <img src="imagenes\logo jpb 1.svg" alt="LOGO JUANBA">
+            <img class="logo" src="imagenes\logo jpb 1.svg" alt="LOGO JUANBA">
         </picture>
         <nav>
             <ul class="flexRow">
@@ -32,7 +32,7 @@
                             <a href="planes.html">Planes de servicios</a>
                         </li>
                         <li>
-                            <a href="clientes_actuales.html">Clientes Actuales</a>
+                            <a href="reseña_web.html">Importancia de la WEB</a>
                         </li>
                         <li>
                             <a href="contacto.html">Contacto</a>
@@ -46,7 +46,7 @@
                     <a href="planes.html">Planes de servicios</a>
                 </li>
                 <li class="listasOcultas">
-                    <a href="clientes_actuales.html">Clientes Actuales</a>
+                    <a href="reseña_web.html">Importancia de la WEB</a>
                 </li>
                 <li class="listasOcultas">
                     <a href="contacto.html">Contacto</a>
@@ -54,59 +54,80 @@
             </ul>
         </nav>
     </header>
-    <main class="flexCol">
-        <h1>Comuniquese con nosotros</h1>
-        <form action="" method="POST" enctype="application/x-www-form-urlencoded">
-            <div>
-                <h3 class="tituloForm" >Ingrese sus datos y lo contactaremos</h3>
-            </div>
-            <div>
+    <main class="mainContacto">
+        <h1 class="h1Contacto">SOLICITUD DE PRESUPUESTO</h1>
+        <p class="p1" >A continuación podrás solicitar un presupuesto.
+        </p>
+        <P class="p2">Completa los datos solicitados para que pueda contactarte y asi ofrecerte algunos de los planes que mejor se adapten a tus necesidades.
+        </P>
+        <nav class="navContacto flexCol">
+            <a href="https://api.whatsapp.com/send?phone=+541138450352&text=Hola, queria consultar por los servicios de desarrollo Web">
+                <img src="imagenes\iconos\Vector.png" alt="wasap">Consultame por WhatsApp
+            </a>
+            <a href="tel:+541138450352">
+                <img src="imagenes\iconos\Vector-1.png" alt="icono Telefono">Llamame desde cualquier telefono
+            </a>
+            <a href="mailto:juanpablo_b77@hotmail.com">
+                <img src="imagenes\iconos\Vector-2.png" alt="icono Mail">Enviame un eMail
+            </a>
+        </nav>
+        <div class="lineaVertical">
+        </div>
+        <h3 class="tituloForm">Ingrese sus datos y lo contactaremos</h3>
+        <form class="formulario" action="" method="POST" enctype="application/x-www-form-urlencoded">
+            <div class="input1 flexCol">
                 <label for="name">Nombre</label>
-                <input type="text" name="name"  placeholder="Nombre Completo">
+                <input type="text" name="name"  placeholder="Nombre Completo" required>
+            </div>
+            <div class="input2 flexCol" class="input1">
                 <label for="lastname">Apellido</label>
-                <input type="text" name="lastname"  placeholder="Apellido">
+                <input type="text" name="lastname"  placeholder="Apellido" required>
             </div>
-            <div>
-                <h3 class="tituloForm" >Seleccione sus Estudios Alcanzados</h3>
-           </div>    
-           <div class="tituloForm">
-                <label for="Primarios">Primarios</label>
-                <input type="checkbox" name="Primarios">
-                <label for="Secundarios">Secundarios</label>
-                <input type="checkbox" name="Secundarios">
-                <label for="Universitarios">Universitarios</label>
-                <input type="checkbox" name="Universitarios">
-                <label for="Posgrado">Posgrado</label>
-                <input type="checkbox" name="Posgrado">
+            <div class="input3 flexCol">
+                <label for="tel">Telefono</label>
+                <input type="tel" name="tel"  placeholder="15-1234-5678" required>
             </div>
-             <br>
-             <div>
+            <div class="input4 flexCol">
+                <label for="email">Correo Electronico</label>
+                <input type="email" name="email"  placeholder="correo@correo.com"  required>
+            </div>
+            <div class="input5 flexCol">
                 <label for="country">Pais de Residencia</label>
                 <select name="country">
+                    <option value="Seleccionar" disabled>Seleccionar</option>
                     <option value="Argentina">Argentina</option>
                     <option value="Brasil">Brasil</option>
                     <option value="Uruguay">Uruguay</option>
+                    <option value="Peru">Peru</option>
+                    <option value="Paraguay">Paraguay</option>
+                    <option value="Bolivia">Bolivia</option>
+                    <option value="Estados Unidos">Estados Unidos</option>
                     <option value="Resto del Mundo">Resto del Mundo</option>
-            </div>      
-            <input type="submit" value="Enviar Informacion">
-            <input type="reset" value="Limpiar Valores">
+                </select>
+            </div>
+            <div class="input6 flexCol">
+                <label for="comment">Comentarios</label>
+                <textarea name="comment" id="" cols="10" rows="8" placeholder="Dejame tus consultas y te respondere a la brevedad"></textarea>
+            </div>   
+            <div class="input7">
+                <input type="submit" value="Enviar Informacion">
+            </div>   
         </form>
     </main>
-    <footer>
-        <nav>
-            <a href="">
-                <img src="imagenes\iconos\Vector.png" alt="wasap"> Envienos un WhatsApp
+    <footer class="footerContacto flexCol">
+        <h4>Seguime en redes</h4>
+        <div class="flexRow">
+            <a href="https://www.instagram.com">
+                <img src="imagenes\iconos\ico Instagram.svg" alt="">
             </a>
-            <a href="">
-                <img src="imagenes\iconos\Vector-1.png" alt="icono Telefono">Llame desde cualquier telefono
+            <a href="https://ar.linkedin.com/">
+                <img src="imagenes\iconos\ico Linkedin.svg" alt="">
             </a>
-            <a href="">
-                <img src="imagenes\iconos\Vector-2.png" alt="icono Mail">Envienos un eMail
+            <a href="https://www.facebook.com/">
+                <img src="imagenes\iconos\icomoon-free_facebook.svg" alt="">
             </a>
-        </nav>
-        <div>
-            <p class="copyright">Todos los derechos Reservados &copy; | JUAMBA Desarrolo Web</p>
         </div>
+        <p class="copyright">Todos los derechos Reservados &copy; | JUANBA Desarrolo Web</p>
     </footer>
 </body>
 </html>

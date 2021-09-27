@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*NORMALIZADO*/
 * {
   margin: 0;
@@ -26,22 +27,24 @@ header {
   height: 15vh;
   padding: 10px;
   background: whitesmoke;
-  align-items: center; }
+  align-items: center;
+  justify-content: space-between; }
   header picture {
     height: 100%;
-    width: 30%;
     margin: 0 auto; }
-    header picture img {
-      max-height: 78px; }
+    header picture .logo {
+      max-height: 78px;
+      box-shadow: 1px 1px 100px 1px grey;
+      border-radius: 6px; }
   header nav {
     width: 60%;
     margin: 0 auto;
     background-color: inherit; }
     header nav ul {
-      list-style: none; }
+      align-items: baseline;
+      justify-content: space-around; }
     header nav li {
       display: inline-block;
-      width: 25%;
       position: relative; }
       header nav li ul {
         position: absolute;
@@ -55,12 +58,14 @@ header {
         font-size: 17px;
         font-weight: bolder;
         text-align: center;
-        justify-content: center;
-        width: 120px;
         background: whitesmoke; }
       header nav li a:hover {
         border-bottom: 2px solid #c5aeae;
         color: #00ccff; }
+
+.listasOcultas {
+  text-align: center;
+  text-shadow: 0.5px 0.5px 1px crimson; }
 
 .menuColapsado {
   display: none; }
@@ -68,44 +73,72 @@ header {
 /* MAIN GENERAL*/
 main {
   width: 100%;
-  background-color: #890aaf;
+  background-color: whitesmoke;
   margin-top: 15vh; }
-  main h1 {
+  main h1, main h2 {
     color: #1a0e0e;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 40px; }
+    text-align: center;
+    margin: 50px auto; }
+  main h1 {
+    font-size: 4em; }
+  main h2 {
+    font-size: 3em; }
 
 /* FOOTER GENERAL*/
 footer {
   width: 100%;
-  background-color: rgba(19, 13, 13, 0.842);
-  margin-top: 15vh; }
+  height: 80vh;
+  background-image: linear-gradient(to left, #B5179E, #7209B7, #560BAD, #3A0CA3, #4361EE, #4CC9F0, #E9C46A);
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 20px 5px 20px; }
+  footer h4 {
+    font-size: 2.8em;
+    padding-top: 30px;
+    align-self: center; }
+  footer .footerRedes {
+    width: 100%;
+    justify-content: space-around; }
+  footer .redes {
+    height: 39px;
+    margin: 30px 15px; }
+  footer p, footer h3 {
+    text-align: center;
+    text-decoration: underline;
+    color: #2b2b2b;
+    font-weight: bold; }
+  footer p {
+    font-size: 2.5em;
+    padding-top: 45px; }
+  footer h3 {
+    font-size: 3em; }
   footer nav {
     align-items: center; }
-  footer a {
-    color: black;
-    font-size: 20px;
-    font-weight: bold;
-    padding: 10px 20px;
-    border: black;
-    text-decoration: none;
-    display: block;
-    height: 50px;
-    text-align: center;
-    margin: 15px;
-    padding: 10px; }
-    footer a img {
-      display: inline-block;
-      height: 80%;
-      top: auto;
-      padding-right: 10px; }
+    footer nav a {
+      color: black;
+      font-size: 2em;
+      font-weight: bold;
+      border: black;
+      text-decoration: none;
+      display: block;
+      height: 50px;
+      text-align: center;
+      padding: 10px;
+      border-radius: 6px; }
+      footer nav a img {
+        display: inline-block;
+        height: 80%;
+        top: auto;
+        padding-right: 10px;
+        vertical-align: middle; }
 
 .copyright {
   text-align: center;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font-size: 20px;
+  font-size: 2em;
   border: none;
-  color: grey; }
+  padding-bottom: 5px;
+  color: black; }
 
 /*------ MAIN INDEX-------*/
 .contenedorH1Index {
@@ -113,103 +146,241 @@ footer {
   height: 85vh;
   background-image: url(../imagenes/imagen_cel.png);
   background-size: cover;
-  background-repeat: no-repeat; }
+  background-repeat: no-repeat;
+  background-position: center;
+  justify-content: center;
+  align-items: center; }
 
 .h1Index {
   text-align: justify;
-  padding: 42.5vh 200px;
-  color: black; }
+  padding: 0 15%;
+  color: black;
+  font-size: 4em; }
 
 .h1SpanIndex {
   color: whitesmoke;
   font-weight: bold; }
 
-/*----MAIN CLIENTES ACTUALES------*/
-.imagenesClientes {
-  width: 30%;
-  height: 100px;
-  border: solid 1px black;
-  margin: 15px;
-  min-width: 250px;
-  padding: 10px;
-  background-color: cadetblue; }
+/*--------------MAIN QUIEN SOY-------------*/
+.mainQuienSoy .flexRow {
+  justify-content: space-around; }
+  .mainQuienSoy .flexRow img {
+    max-width: 180px;
+    max-height: 240px;
+    background-size: cover;
+    display: inline-block;
+    margin: 0 15px 20px 15px; }
+  .mainQuienSoy .flexRow p {
+    font-size: 2.5em;
+    display: inline-block;
+    font-family: sans-serif; }
 
-.pClientes {
+/*----------MAIN RESEÑA WEB----------*/
+.imagenesReseña {
+  margin: 15px auto;
+  width: 70%;
+  background-size: cover;
+  background-attachment: fixed;
+  display: block; }
+
+.pReseña {
   background-color: whitesmoke;
-  font-size: 20px;
+  font-size: 2.5em;
   margin: 15px;
-  padding: 10px;
-  display: block;
-  border: 1px solid black; }
+  padding: 20px;
+  line-height: 40px;
+  position: relative; }
 
-/*------ESTILOS TABLAS------*/
+/*------------MAIN PLANES------------*/
+.mainPlanes p {
+  color: #2b2b2b;
+  font-size: 2em;
+  padding: 10px; }
+
+.mainPlanes h1 {
+  font-size: 3em;
+  margin: 15vh 15px 30px 15px;
+  color: #2b2b2b; }
+
+.mainPlanes h2 {
+  font-size: 2.2em;
+  margin: 5px 30px;
+  text-align: start; }
+
 #Tabla1 {
   margin: 20px auto;
   border: 4px solid #008b6d;
   border-collapse: collapse;
   width: 60%;
-  background: linear-gradient(to right, black, rgba(0, 128, 0, 0.808), rgba(255, 255, 0, 0.658), rgba(32, 0, 44, 0.712), rgba(255, 0, 0, 0.486));
   font-size: large;
   font-family: 'roboto';
-  color: white;
-  transition: all 1s ease-in-out;
+  color: #2b2b2b;
   text-align: center; }
   #Tabla1 caption {
     font-size: 30px;
     text-decoration: underline;
     margin-bottom: 10px; }
 
-#Tabla1:hover {
-  transform: scale(1.2, 1.2);
-  color: white; }
+/*-----------MAIN CONTACTO-----------*/
+.mainContacto {
+  display: grid;
+  grid-template-columns: 1fr 1fr 2fr 2fr;
+  grid-template-rows: auto auto auto auto;
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  padding: 10px; }
+  .mainContacto form div {
+    margin: 1em; }
+  .mainContacto label {
+    font-size: 2.2em; }
+  .mainContacto input, .mainContacto select, .mainContacto textarea {
+    font-size: 1.8em;
+    width: 85%; }
+  .mainContacto p {
+    font-size: 2.1em;
+    color: #2b2b2b; }
+  .mainContacto a {
+    display: block; }
+    .mainContacto a img {
+      display: inline-block; }
+
+.h1Contacto {
+  font-size: 3em;
+  grid-column: 1/3;
+  color: #2b2b2b;
+  text-align: center;
+  margin: 10px 10px 0 10px;
+  line-height: 45px;
+  padding-top: 30px; }
+
+.p1 {
+  grid-column: 1/3;
+  text-align: justify;
+  padding: 15px;
+  margin-top: 30px;
+  grid-row: 2/2.5;
+  display: inline-block; }
+
+.p2 {
+  grid-column: 1/3;
+  padding: 15px;
+  text-align: justify; }
+
+.navContacto {
+  grid-column: 1/3;
+  display: flex; }
+  .navContacto a {
+    color: #2b2b2b;
+    font-size: 2em;
+    justify-content: space-between;
+    height: 100%;
+    padding: 0px 10px; }
+    .navContacto a img {
+      max-height: 35px;
+      padding: 5px;
+      vertical-align: middle; }
+
+.lineaVertical {
+  width: 3px;
+  height: inherit;
+  background-color: #2b2b2b;
+  grid-column: 3/4;
+  grid-row: 1/6; }
 
 .tituloForm {
-  color: #1616cc;
-  font-size: 30px;
-  margin: 10px;
-  padding: 10px;
   font-weight: bolder;
-  display: inline-block;
-  border-radius: 45px;
-  border: solid #ffc400;
-  background-color: white; }
-
-form {
-  margin: 30px auto;
-  margin-left: 30px;
-  font-size: 2rem;
-  font-weight: bold; }
-
-h3 {
-  font-size: 40px;
+  border-radius: 3em;
+  font-size: 3em;
+  color: #1616cc;
+  margin: 15px;
+  padding-top: 40px;
   text-decoration: underline;
-  color: #1d0303; }
+  grid-column: 3/5;
+  grid-row: 1/2;
+  text-align: center; }
 
-.menuColapsado {
-  display: none; }
+.formulario {
+  grid-column: 3/5;
+  grid-row: 2/5;
+  font-weight: bold;
+  display: grid;
+  grid-template-columns: auto auto;
+  margin: 0 20px; }
+  .formulario .input1 {
+    grid-column: 1/2;
+    grid-row: 1/2; }
+  .formulario .input2 {
+    grid-column: 2/3;
+    grid-row: 1/2; }
+  .formulario .input3 {
+    grid-column: 1/2;
+    grid-row: 2/3; }
+  .formulario .input4 {
+    grid-column: 2/3;
+    grid-row: 2/3; }
+  .formulario .input5 {
+    grid-column: 1/2;
+    grid-row: 3/4; }
+  .formulario .input6 {
+    grid-column: 2/3;
+    grid-row: 3/4; }
+  .formulario .input7 {
+    grid-column: 1/3;
+    grid-row: 4/5;
+    align-self: center;
+    width: 200px;
+    margin: 0 auto;
+    text-align: center; }
+    .formulario .input7 input {
+      background-color: #ffe600; }
+  .formulario .input7:hover input {
+    background-color: #2b2b2b69; }
 
-/* -----MEDIA QUERIES--------*/
-@media only screen and (max-width: 768px) {
-  li {
-    display: inline-block;
-    position: relative;
-    font-size: 14px; }
-  ul li ul {
-    position: absolute;
-    display: none; }
-  ul ul li {
+/*--------- FOOTER CONTACTO-----------*/
+.footerContacto {
+  height: 40vh;
+  justify-content: space-between; }
+  .footerContacto .flexRow {
+    width: 25%;
+    justify-content: space-evenly; }
+    .footerContacto .flexRow a {
+      margin: 0 15px; }
+
+/* -----RESPONSIVE MEDIA QUERIES--------*/
+@media only screen and (max-width: 720px) {
+  body {
+    font-size: 9px; }
+    body .mainContacto, body .formulario {
+      display: flex;
+      flex-direction: column;
+      padding-bottom: 30px; }
+    body .tituloForm {
+      padding: 0; }
+    body .navContacto {
+      text-align: center;
+      margin: 30px auto; }
+    body li {
+      font-size: 14px; }
+    body ul ul li {
+      display: block; }
+    body ul li:hover ul {
+      display: inline-block; }
+    body .listasOcultas {
+      display: none; }
+    body .menuColapsado {
+      display: block;
+      width: 120px;
+      border-right: 2px solid black;
+      border-bottom: 2px solid black;
+      box-shadow: 5px 5px 10px grey;
+      color: blue; }
+    body .liHome {
+      margin: 0 auto; }
+    body #ulHome {
+      border-bottom: 2px solid grey;
+      width: 100%; }
+  .mainQuienSoy .flexRow {
     display: block; }
-  ul li:hover ul {
-    display: inline-block; }
-  .listasOcultas {
-    display: none; }
-  .menuColapsado {
-    display: block;
-    width: 120px;
-    border-right: 2px solid black;
-    border-bottom: 2px solid black; }
-  .liHome {
-    margin: 0 auto; }
-  #ulHome {
-    border-bottom: 2px solid grey;
-    width: 100%; } }
+    .mainQuienSoy .flexRow img {
+      margin: 15px 25%; } }

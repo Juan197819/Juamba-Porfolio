@@ -34,14 +34,16 @@ header{
     padding: 10px;
     background: whitesmoke ;
     align-items: center;
+    justify-content: space-between;
 
     picture{
         height: 100%;
-        width: 30%;
         margin: 0 auto;
         
-        img{
+        .logo{
             max-height: 78px;
+            box-shadow: 1px 1px 100px 1px grey;
+            border-radius: 6px;
         }
     } 
 
@@ -51,14 +53,14 @@ header{
         background-color:inherit ;
 
         ul{
-            list-style: none;
+            align-items: baseline;
+            justify-content: space-around;
         }
 
         li{
             display: inline-block;   
-            width: 25%;
             position: relative;
-            
+
             ul{
                 position: absolute;
                 display: none;
@@ -73,8 +75,6 @@ header{
                 font-size: 17px;
                 font-weight: bolder;
                 text-align: center;
-                justify-content: center;
-                width: 120px;
                 background: whitesmoke ;
             }
             
@@ -86,6 +86,12 @@ header{
     }
 }
 
+.listasOcultas{
+    text-align: center;
+    text-shadow: 0.5px 0.5px 1px crimson;
+}
+
+
 .menuColapsado{
     display: none;
     }
@@ -94,13 +100,21 @@ header{
 
 main{
     width: 100%;
-    background-color: rgb(137, 10, 175);
+    background-color: whitesmoke;
     margin-top: 15vh;
     
-    h1{
+    h1, h2{
         color: rgb(26, 14, 14);
-        font-family: Arial, Helvetica, sans-serif;
-        font-size: 40px;
+        text-align: center;
+        margin: 50px auto;
+    }
+
+    h1{
+        font-size: 4em;
+    }
+
+    h2{
+        font-size: 3em;
     }
 }
 
@@ -108,30 +122,66 @@ main{
 
 footer{
     width: 100%;
-    background-color: rgba(19, 13, 13, 0.842);
-    margin-top: 15vh;
+    height: 80vh;
+    background-image: linear-gradient(to left, #B5179E, #7209B7, #560BAD, #3A0CA3,#4361EE, #4CC9F0,#E9C46A);
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 20px 5px 20px;
+
+    h4{
+        font-size: 2.8em;
+        padding-top: 30px;
+        align-self: center;
+    }
+
+    .footerRedes{
+        width: 100%;
+        justify-content: space-around;
+    }
+
+    .redes{
+        height: 39px;
+        margin: 30px 15px;
+    }
+
+    p, h3{
+        text-align: center;
+        text-decoration: underline;
+        color: #2b2b2b;
+        font-weight: bold;
+    }
+
+    p{
+        font-size: 2.5em;
+        padding-top:45px;
+    }
+
+    h3{
+        font-size: 3em;
+    }
 
     nav{
         align-items: center;
-    }
-    
-    a{
-        color: black;
-        font-size: 20px;
-        font-weight: bold;
-        padding: 10px 20px;
-        border: black;
-        text-decoration: none;
-        display: block;
-        height: 50px;
-        text-align: center;
-        margin: 15px;
-        padding: 10px;
-        img{
-            display: inline-block;
-            height: 80%;
-            top: auto;
-            padding-right: 10px; 
+        
+        a{
+            color: black;
+            font-size: 2em;
+            font-weight: bold;
+            border: black;
+            text-decoration: none;
+            display: block;
+            height: 50px;
+            text-align: center;
+            padding: 10px;
+            border-radius: 6px;
+
+            img{
+                display: inline-block;
+                height: 80%;
+                top: auto;
+                padding-right: 10px; 
+                vertical-align: middle;
+            }
         }
     }
 }
@@ -139,8 +189,8 @@ footer{
 .copyright{
     text-align: center;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 20px;
+    font-size: 2em;
     border: none;
-    color: grey;
+    padding-bottom: 5px;
+    color: black;
 }
-

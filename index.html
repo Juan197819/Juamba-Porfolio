@@ -10,15 +10,16 @@
     <title>JUANBA - PROYECTOS INTEGRALES</title>
     <!--<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>-->
-    <link href = "https: //fonts.googleapis.com/css2? family = Roboto: wght @ 100 & display = swap "rel ="stylesheet ">
+    <link href = "https: //fonts.googleapis.com/css2? family = Roboto: wght @ 100 & display = swap "rel ="stylesheet">
     <link rel="stylesheet" href="css\index.css">
 </head>
 <body class="flexCol">
     <header class="flexRow">
         <picture>
-            <img src="imagenes\logo jpb 1.svg" alt="LOGO JUANBA">
+            <img class="logo" src="imagenes\logo jpb 1.svg" alt="LOGO JUANBA">
         </picture>
-        <nav>
+        <nav>                
+
             <ul class="flexRow">
                 <li class="liHome">
                     <a class="menuColapsado" href="#">Menu</a>
@@ -28,13 +29,13 @@
                             <a href="index.html">Home</a>
                         </li>
                         <li>
-                            <a href="quien_soy.html">¿Quien Soy?</a>
+                            <a href="quien_soy.html">¿Quién Soy?</a>
                         </li>
                         <li>                   
                             <a href="planes.html">Planes de servicios</a>
                         </li>
                         <li>
-                            <a href="clientes_actuales.html">Clientes Actuales</a>
+                            <a href="reseña_web.html">Importancia de la WEB</a>
                         </li>
                         <li>
                             <a href="contacto.html">Contacto</a>
@@ -48,7 +49,7 @@
                     <a href="planes.html">Planes de servicios</a>
                 </li>
                 <li class="listasOcultas">
-                    <a href="clientes_actuales.html">Clientes Actuales</a>
+                    <a href="reseña_web.html">Importancia de la WEB</a>
                 </li>
                 <li class="listasOcultas">
                     <a href="contacto.html">Contacto</a>
@@ -63,20 +64,34 @@
             </h1>
         </div>
     </main>
-    <footer>
-        <nav class="flexCol">
-            <a href="">
-                <img src="imagenes\iconos\Vector.png" alt="icono WhatsApp"> Envienos un WhatsApp
-            </a>
-            <a href="tel:+541138450352">
-                <img src="imagenes\iconos\Vector-1.png" alt="icono Telefono">Llame desde cualquier telefono
-            </a>
-            <a href="mailto:juanpablo_b77@hotmail.com">
-                <img src="imagenes\iconos\Vector-2.png" alt="icono Mail">Envienos un eMail
-            </a>
-        </nav>
+    <footer class="flexCol">
+        <p>Contactate conmigo a traves del medio que prefieras</p>
+        <div class="flexRow footerRedes">
+            <nav class="flexCol">
+                <a href="https://api.whatsapp.com/send?phone=+541138450352&text=Hola, queria consultar por los servicios de desarrollo Web">
+                    <img src="imagenes\iconos\Vector.png" alt="wasap">Consultame por WhatsApp
+                </a>
+                <a href="tel:+541138450352">
+                    <img src="imagenes\iconos\Vector-1.png" alt="icono Telefono">Llamame desde cualquier telefono
+                </a>
+                <a href="mailto:juanpablo_b77@hotmail.com">
+                    <img src="imagenes\iconos\Vector-2.png" alt="icono Mail">Enviame un eMail
+                </a>
+                <nav class="flexRow">
+                    <a href="https://www.instagram.com">
+                        <img  class="redes" src="imagenes\iconos\ico Instagram.svg" alt="">
+                    </a>
+                    <a href="https://ar.linkedin.com/">
+                        <img  class="redes" src="imagenes\iconos\ico Linkedin.svg" alt="">
+                    </a>
+                    <a href="https://www.facebook.com/">
+                        <img  class="redes" src="imagenes\iconos\icomoon-free_facebook.svg" alt="">
+                    </a>
+                </nav>
+            </nav>
+        </div>
         <div>
-            <p class="copyright">Todos los derechos Reservados &copy; | JUAMBA Desarrolo Web</p>
+            <p class="copyright">Todos los derechos Reservados &copy; | JUANBA Desarrolo Web</p>
         </div>
     </footer>
 </body>
